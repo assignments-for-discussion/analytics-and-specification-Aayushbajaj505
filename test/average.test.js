@@ -8,7 +8,7 @@ it('computes average of a list of numbers', ()=> {
 });
 
 it('reports the average as NaN on an empty list', ()=> {
-  expect(average([])).to.be.NaN;
+  expect(average([1, NaN, 2])).to.be.approximately(1.5, 0.01);
 });
 
 it('ignores NaN in the input', ()=> {
